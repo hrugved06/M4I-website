@@ -1,13 +1,4 @@
 @charset "utf-8";
-/*
-Template Name: Arialogic
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
-File: Layout CSS
-*/
-
 @import url("fontawesome-4.5.0.min.css");
 @import url("framework.css");
 
@@ -22,11 +13,11 @@ File: Layout CSS
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{padding:50px 0;}
+#header{padding:20px 0;}
 
 #header #logo{text-align:center;}
 #header #logo *{margin:0; padding:0; line-height:1;}
-#header #logo h1{font-size:42px; letter-spacing:5px; text-transform:uppercase;}
+#header #logo h1{font-size:42px; letter-spacing:5px; }
 #header #logo p{margin-top:-3px; font-size:.9rem; font-style:italic; text-transform:lowercase;}
 
 
@@ -36,7 +27,7 @@ File: Layout CSS
 
 #pageintro article{display:block; max-width:60%; margin:0 auto;}
 #pageintro article .introtxt{margin:0 0 50px 0; padding:30px; border-radius:0 50px;}
-#pageintro article .heading{margin-bottom:30px; font-size:36px;}
+#pageintro article .heading{margin:10px; font-size:36px;}
 #pageintro article p:last-of-type{margin-bottom:0;}
 
 
@@ -234,15 +225,15 @@ td{border-width:0 1px;}
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#888888; background-color:#FFFFFF;}
 a{color:#82A800;}
-a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+a:active, a:focus{background:#82A800;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#82A800; border-color:#82A800;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn, .btn.inverse:hover{color:#000; background-color:#82A800; border-color:#82A800;}
+.btn:hover, .btn.inverse{color:#000; background-color:#82A800; border-color:#82A800;}
 
 
 /* Rows */
