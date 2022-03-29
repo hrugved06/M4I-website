@@ -2,6 +2,15 @@
 @import url("fontawesome-4.5.0.min.css");
 @import url("framework.css");
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+section {
+  height: 100vh;
+}
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row1, .row1 a{}
@@ -13,27 +22,36 @@
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{padding:20px 0;}
+/* #header{padding:0 0 30px 0;} */
 
 #header #logo{text-align:center;}
-#header #logo *{margin:0; padding:0; line-height:1;}
-#header #logo h1{font-size:42px; letter-spacing:5px; }
+#header #logo *{line-height:1;}
+#header #logo h1{margin:0; padding: 20px; font-size:40px; letter-spacing:5px;}
 #header #logo p{margin-top:-3px; font-size:.9rem; font-style:italic; text-transform:lowercase;}
 
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:120px 0; text-align:center;}
+#pageintro{padding:152px 0; text-align:center;}
 
 #pageintro article{display:block; max-width:60%; margin:0 auto;}
 #pageintro article .introtxt{margin:0 0 50px 0; padding:30px; border-radius:0 50px;}
-#pageintro article .heading{margin:10px; font-size:36px;}
-#pageintro article p:last-of-type{margin-bottom:0;}
+#pageintro article .heading{margin:10px; font-size:36px; text-transform:none;}
+#pageintro article p:last-of-type{margin:0;}
+
+
+/* Footer */
+#footer .title{color:#FFFFFF;}
+#footer .linklist li{border-color:#2E2E2E;}
+#footer input, #footer button{border-color:transparent;}
+#footer input{color:#FFFFFF; background-color:#2E2E2E;}
+#footer input:focus{border-color:#82A800;}
+#footer button{color:#FFFFFF; background-color:#82A800;}
 
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+.pagetwo .container{padding:180px 0;}
 
 /* Content */
 .container .content{}
@@ -43,6 +61,7 @@
 .blocks li .btn{margin-bottom:30px;}
 
 /* Elements */
+.pagefour .container{padding: 100px 0;}
 .elements li:last-child{margin-bottom:0;}/* Used for mobile devices when elements stack */
 .elements article{display:inline-block; width:100%; max-width:320px; height:100%;}
 .elements .txtwrap{padding:20px; border-top:5px solid; text-align:center;}
@@ -76,29 +95,32 @@
 
 /* Testimonials
 --------------------------------------------------------------------------------------------------------------- */
-#testimonials{}
-#testimonials li{}
+
+#testimonials .center{margin: 0; padding: 50px 0;}
 #testimonials li:last-child{margin-bottom:0;}
-#testimonials li div{position:relative; min-height:120px; padding:20px 20px 20px 120px; border-radius:0 35px;}
-#testimonials li img{position:absolute; left:20px;}
-#testimonials li span{margin-bottom:5px;}
+#testimonials li div{position:relative; min-height:120px; margin: 10px 0; padding:20px 20px 20px 120px; border-radius:0 35px;}
+#testimonials li img{position:absolute; left:20px; border-radius: 5px; width: 80px; height: 80px;}
 #testimonials li span strong{margin-bottom:5px;}
 #testimonials li span em{font-size:.8rem;}
-#testimonials li blockquote{display:block; position:relative; width:100%; margin:0; padding:0;}
+#testimonials li blockquote{display:block; position:relative; width:100%; margin:0; padding:10px;}
+
 
 
 /* Logos
 --------------------------------------------------------------------------------------------------------------- */
-#logos{padding:30px 0;}
+#logos{padding:40px 0;}
 #logos li{float:left; width:16%; margin-left:5%;}
 #logos li:first-child{margin-left:0;}
-#logos li img{opacity:.5;}
-#logos li:hover img{opacity:1;}
+#logos li img{width: 320px; height: 100px; mix-blend-mode:multiply;}
+#logos li:hover img{mix-blend-mode: normal; box-shadow:0 5px 10px #000000; transition: .3s;}
+
 
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
-#footer{padding:80px 0;}
+.pagefive .coloured h2{margin:0; padding: 40px 0 0; font-size: x-large; text-align: center;}
+
+#footer{padding:72px 0;}
 
 #footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem; text-transform:uppercase;}
 
@@ -121,7 +143,7 @@
 --------------------------------------------------------------------------------------------------------------- */
 #copyright{padding:20px 0;}
 #copyright *{margin:0; padding:0;}
-
+#copyright span{color: #5e7a00;}
 
 /* Transition Fade
 --------------------------------------------------------------------------------------------------------------- */
@@ -144,7 +166,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 
 /* Top Navigation */
-#mainav{margin-bottom:40px; border-bottom:1px solid;}
+#mainav{border-bottom:1px solid;}
 #mainav ul{text-transform:uppercase; text-align:center;}
 #mainav ul ul{z-index:9999; position:absolute; width:160px; text-transform:none; text-align:left;}
 #mainav ul ul ul{left:160px; top:0;}
@@ -268,15 +290,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 #testimonials li div:hover{color:#FFFFFF; background-color:#82A800;}
 
 
-/* Footer */
-#footer .title{color:#FFFFFF;}
-#footer .linklist li{border-color:#2E2E2E;}
-#footer input, #footer button{border-color:transparent;}
-#footer input{color:#FFFFFF; background-color:#2E2E2E;}
-#footer input:focus{border-color:#82A800;}
-#footer button{color:#FFFFFF; background-color:#82A800;}
-
-
 /* Navigation */
 #mainav{border-color:rgba(255,255,255,.2);}
 #mainav li a{color:inherit;}
@@ -294,7 +307,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 .pagination a, .pagination strong{border-color:#D7D7D7;}
 .pagination .current *{color:#FFFFFF; background-color:#82A800;}
 
-#backtotop{color:#FFFFFF; background-color:#82A800;}
+#backtotop{color:#FFFFFF; background-color:#82A800; border: 1px solid #000;}
 
 
 /* Tables + Comments */
